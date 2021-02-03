@@ -1,0 +1,31 @@
+﻿@using Demo.ViewModels
+@model EmployeeViewModel
+@{
+    ViewBag.Title = "GetView";
+}
+
+<h2>GetView</h2>
+
+<div>
+    @*@{
+            Demo.Models.Employee emp = (Demo.Models.Employee)ViewData["Employee"];
+        }
+        <h1> viewdata:</h1>
+        <b>@emp.FirstName</b>
+        <b>@emp.LastName</b>
+        <b>@emp.Salary</b>
+        @{
+            Demo.Models.Employee empbag = (Demo.Models.Employee)ViewBag.EmployeeBag;
+        }
+        <h1> viewBag:</h1>
+        <b>@empbag.FirstName</b>
+        <b>@empbag.LastName</b>
+        <b>@empbag.Salary</b>*@
+
+    <b>Employee Details</b><br />
+          Employee Name : @Model.EmployeeName <br />
+     <span style="background-color:@Model.SalaryColor">
+                Employee Salary: @Model.Salary
+       
+    </span>
+</div>
